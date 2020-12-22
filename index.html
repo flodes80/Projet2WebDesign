@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+    <title>Projet 2 - Bootstrap 4</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/fontawesome/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    
+    <!-- ======= Header (Start) ======= -->
+    <header id="header" class="fixed-top">
+        <div class="d-flex align-items-center">
+            
+            <nav class="navbar navbar-light bg-light navbar-expand-lg w-100">
+                <a class="navbar-brand ml-4" href="#"><h1>Logo</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-4">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Installation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mise en page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Composants</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+    <!-- ======= Header (End) ======= -->
+    
+    <main>
+        <!-- ======= Creators Section (Start) ======= -->
+        <section id="team" class="team">
+            <div class="container">
+                
+                <div class="section-title">
+                    <h2>Présentation de Bootstrap</h2>
+                </div>
+                
+                <div class="section-title">
+                    <h3>Description brève</h3>
+                </div>
+                <div class="row">
+                    <p>Bootstrap est ce que l’on appelle un framework CSS (Cascading Style Sheets) open-source, regroupant un ensemble de librairies dans le but de faciliter / accélérer le développement de styles CSS.</p>
+                    <p>Cela correspond plus concrètement à un ensemble de fichiers Javascript et CSS qui permettent de créer des designs plus ou moins complexes de manière assez simple.</p>
+                    <p>Bootstrap défini au travers de ses fichiers, et donc de son framework, tout un tas de règles prédéfinies qui permettent d’appliquer un ensemble de styles à tel ou tel élément HTML (Hypertext Markup Language).</p>
+                </div>
+                
+                <div class="section-title">
+                    <h3>Naissance de <span>Bootstrap</span></h3>
+                </div>
+                <div class="row">
+                    <p>Créé à l’origine par un designer / développeur de Twitter, Bootstrap est devenu l’un des frameworks « front-end » open-source les plus populaires au monde.</p>
+                    <p>En 2010, deux employés de Twitter créent Bootstrap :</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/mark-otto.jpg" class="img-fluid" alt="Mark Otto">
+                                <div class="social">
+                                    <a href="https://twitter.com/mdo"><i class="fab fa-twitter"></i> (Twitter Icon)</a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Mark Otto</h4>
+                                <span>(Description / Job ?)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/jacob-thornton.jpg" class="img-fluid" alt="Jacob Thornton">
+                                <div class="social">
+                                    <a href="https://twitter.com/fat"><i class="fas fa-twitter"></i> (Twitter Icon)</a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Jacob Thornton</h4>
+                                <span>(Description / Job ?)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- ======= Creators Section (End) ======= -->
+        
+        
+        <section id="features" class="features">
+            
+            <div class="container">
+                
+                <div class="section-title">
+                    <h2>Composants</h2>
+                </div>
+                
+                <p>Bootstrap possède une multitude de composants permettant d'ajouter des fonctionnalités dynamiques et interactives à du contenu. L'objectif de cette partie n'est pas de tous les énumérés, mais d'en lister certains afin de visualiser en quoi ces composants peuvent enrichir un site.</p>
+                
+                <div class="section-title">
+                    <h3>Quelques exemples</h3>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="icon-box" data-toggle="modal" data-target="#alertsModal">
+                            Alerts // Modal
+                        </div>
+                    </div>
+                    <div class="modal fade" id="alertsModal" tabindex="-1" role="dialog" aria-labelledby="alertsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="alertsModalLabel">Alerts</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Après l’envoi d’un formulaire, il peut être intéressant d’utiliser les alerts Bootstrap afin d’y notifier le bon envoi du formulaire (souvent en vert) ou les potentielles erreurs rencontrées dans la saisie ou l’envoi du formulaire (souvent en rouge). Il existe donc des alerts de différentes couleurs, et elles peuvent être accompagnées d’un bouton pour les faire disparaître une fois la lecture effectuée.</p>
+                                    <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
+                                    <div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
+                                    <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+                                    <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
+                                    <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+                                    <div class="alert alert-info" role="alert">A simple info alert—check it out!</div>
+                                    <div class="alert alert-light" role="alert">A simple light alert—check it out!</div>
+                                    <div class="alert alert-dark" role="alert">A simple dark alert—check it out!</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="icon-box">
+                            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                            <a href="">Dolor Sitema</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                            <a href="">Sed perspiciatis</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
+                        <div class="icon-box">
+                            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+                            <a href="">Magni Dolores</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                            <a href="">Nemo Enim</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                            <a href="">Eiusmod Tempor</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+                            <a href="">Midela Teren</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+                            <a href="">Pira Neve</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-anchor-line" style="color: #b2904f;"></i>
+                            <a href="">Dirada Pack</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-disc-line" style="color: #b20969;"></i>
+                            <a href="">Moton Ideal</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-base-station-line" style="color: #ff5828;"></i>
+                            <a href="">Verdo Park</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+                            <a href="">Flavor Nivelanda</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+    </main>
+    
+    <footer></footer>
+    
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

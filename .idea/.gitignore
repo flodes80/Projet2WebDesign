@@ -1,0 +1,9 @@
+# Default ignored files
+.idea
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../:\Dropbox\Cours\M2\WebX.0\Projet2\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

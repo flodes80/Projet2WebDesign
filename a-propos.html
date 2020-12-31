@@ -5,9 +5,9 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="COCHEREL Valentin, GARCIA Florian, LECLÈRE Valentin, ROSE Maxime, VOLFF Lorris" name="author"/>
-    <meta name="description"
-          content="Site d'informations sur Bootstrap 4 dans le cadre du projet 2 du module Web Design du Master 2 MIAGE de l'Université de Picardie Jules Verne"/>
-    <link rel="icon" href="assets/img/favicon.ico">
+    <meta content="Site d'informations sur Bootstrap 4 dans le cadre du projet 2 du module Web Design du Master 2 MIAGE de l'Université de Picardie Jules Verne"
+          name="description"/>
+    <link href="assets/img/favicon.ico" rel="icon">
 
     <title>Projet 2 - Bootstrap 4 - À propos</title>
 
@@ -15,81 +15,133 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
 
-    <script src="https://kit.fontawesome.com/f279a2c766.js" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/f279a2c766.js"></script>
 </head>
 
 <body>
-<header class="fixed-top">
-    <nav class="navbar navbar-dark bg-purple navbar-expand-lg">
-        <a class="navbar-brand ml-4" href="index.html"><img src="assets/img/Bootstrap_logo.svg" alt="Logo du Projet 2 de Web Design" height="50" width="50"></a>
-        <button aria-controls="menu" aria-expanded="false"
-                aria-label="Menu horizontal" class="navbar-toggler" data-target="#menu"
-                data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ml-auto mr-4">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Présentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="installation.html">Installation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mise-en-page.html">Mise en page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="composants.html">Composants</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="a-propos.html">À propos</a>
+    <header class="fixed-top">
+        <nav class="navbar navbar-dark bg-purple navbar-expand-lg">
+            <a class="navbar-brand ml-4" href="index.html"><img alt="Logo du Projet 2 de Web Design"
+                                                                height="50" src="assets/img/Bootstrap_logo.svg"
+                                                                width="50"></a>
+            <button aria-controls="menu" aria-expanded="false"
+                    aria-label="Menu horizontal" class="navbar-toggler" data-target="#menu"
+                    data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="installation.html">Installation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mise-en-page.html">Mise en page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="composants.html">Composants</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="a-propos.html">À propos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container pt-1">
+
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+            <div class="lh-100">
+                <h1 class="mb-0 text-white lh-100">À propos</h1>
+            </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Projet 2 - Réalisation d'un dossier de veille
+                technologique</h2>
+            <p class="border-gray py-2 mb-0">Ce site web a été réalisé dans le cadre de l'UE <strong>Web Design</strong>
+                (INFO_31).</p>
+            <p class="border-gray py-2 mb-0">Le but de ce site est de présenter un "dossier de veille technologique",
+                ici à
+                propos du framework <strong>Bootstrap</strong>. Ce projet était à réaliser <strong>en groupe
+                    d'étudiants</strong>, ici 5: <em> COCHEREL Valentin, GARCIA Florian, LECLÈRE Valentin, ROSE Maxime
+                    et VOLFF
+                    Lorris</em></p>
+            <p class="border-gray py-2 mb-0">Ce travail devait respecter des étapes bien définies pour être mené à bien
+                :</p>
+            <ul class="list-group">
+                <li class="list-group-item">Identification des sources d'information</li>
+                <li class="list-group-item">Recherches autour de la thématique choisie (collecte d'informations)</li>
+                <li class="list-group-item">Analyse des données recueillies</li>
+                <li class="list-group-item">Conception d'un dossier synthétique</li>
+                <li class="list-group-item">Réalisation d'un site web statique permettant la diffusion conviviale des
+                    résultats de cette veille technologique
                 </li>
             </ul>
         </div>
-    </nav>
-</header>
 
-<main class="container pt-1">
-
-    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
-        <div class="lh-100">
-            <h1 class="mb-0 text-white lh-100">À propos</h1>
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Gabarit fonctionnel</h2>
+            <p class="border-gray py-2 mb-0">Nous avons établit un <strong>gabarit fonctionnel</strong> en amont afin
+                d'avoir une idée de l'allure générale du site. Même si Bootstrap gère différents points de cassure,
+                nous avons réalisé un gabarit fonctionnel pour trois formats d'écran. Les fichiers se trouvent dans
+                le répertoire "assets/illustrator/gabarit-fonctionnel/".</p>
+            <a class="btn btn-primary w-100" download
+               href="assets/illustrator/gabarit-fonctionnel/gabarit_fonctionnel.ai">Télécharger le gabarit fonctionnel
+                (.ai)</a>
+            <div class="card-deck mt-3 text-center">
+                <div class="card box-shadow">
+                    <div class="card-header">
+                        <h3 class="my-0 font-weight-normal">Ordinateur</h3>
+                    </div>
+                    <div class="card-body">
+                        <img alt="Gabarit fonctionnel sur Ordinateur"
+                             class="img-fluid mx-auto d-block my-2"
+                             src="assets/illustrator/gabarit-fonctionnel/ordinateur-100.png"/>
+                    </div>
+                </div>
+                <div class="card box-shadow">
+                    <div class="card-header">
+                        <h3 class="my-0 font-weight-normal">Tablette</h3>
+                    </div>
+                    <div class="card-body">
+                        <img alt="Gabarit fonctionnel sur Tablette"
+                             class="img-fluid mx-auto d-block my-2"
+                             src="assets/illustrator/gabarit-fonctionnel/tablette-100.png"/>
+                    </div>
+                </div>
+                <div class="card box-shadow">
+                    <div class="card-header">
+                        <h3 class="my-0 font-weight-normal">Mobile</h3>
+                    </div>
+                    <div class="card-body">
+                        <img alt="Gabarit fonctionnel sur Mobile"
+                             class="img-fluid mx-auto d-block my-2"
+                             src="assets/illustrator/gabarit-fonctionnel/mobile-100.png"/>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Projet 2 - Réalisation d'un dossier de veille technologique</h2>
-        <p class="border-gray py-2 mb-0">Ce site web a été réalisé dans le cadre de l'UE <strong>Web Design</strong>
-            (INFO_31).</p>
-        <p class="border-gray py-2 mb-0">Le but de ce site est de présenter un "dossier de veille technologique", ici à
-            propos du framework <strong>Bootstrap</strong>. Ce projet était à réaliser <strong>en groupe
-                d'étudiants</strong>, ici 5: <em> COCHEREL Valentin, GARCIA Florian, LECLÈRE Valentin, ROSE Maxime et VOLFF
-                Lorris</em></p>
-        <p class="border-gray py-2 mb-0">Ce travail devait respecter des étapes bien définies pour être mené à bien :</p>
-        <ul class="list-group">
-            <li class="list-group-item">Identification des sources d'information</li>
-            <li class="list-group-item">Recherches autour de la thématique choisie (collecte d'informations)</li>
-            <li class="list-group-item">Analyse des données recueillies</li>
-            <li class="list-group-item">Conception d'un dossier synthétique</li>
-            <li class="list-group-item">Réalisation d'un site web statique permettant la diffusion conviviale des
-                résultats de cette veille technologique
-            </li>
-        </ul>
-    </div>
-
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Gabarit fonctionnel</h2>
-        <p class="border-gray py-2 mb-0">Nous avons établit un <strong>gabarit fonctionnel</strong> en amont afin
-            d'avoir une idée de l'allure générale du site. Même si Bootstrap gère différents points de cassure, 
-            nous avons réalisé un gabarit fonctionnel pour trois formats d'écran. Les fichiers se trouvent dans 
-            le répertoire "assets/illustrator/gabarit-fonctionnel/".</p>
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Gabarit graphique</h2>
+            <p class="border-gray py-2 mb-0">Nous avons aussi établit un <strong>gabarit graphique</strong> en amont qui
+                nous a permis d'obtenir un pré-rendu visuel de notre site avant sa réalisation. Les fichiers se trouvent
+                dans le répertoire "assets/illustrator/gabarit-graphique/".</p>
+            <a class="btn btn-primary w-100" download href="assets/illustrator/gabarit-graphique/gabarit_graphique.ai">Télécharger
+                le gabarit graphique (.ai)</a>
             <div class="card-deck mt-3 text-center">
                 <div class="card box-shadow">
                     <div class="card-header">
                         <h3 class="my-0 font-weight-normal">Ordinateur</h3>
                     </div>
                     <div class="card-body">
-                        <img class="img-fluid mx-auto d-block my-2" src="assets/illustrator/gabarit-fonctionnel/ordinateur-100.png" alt="Gabarit fonctionnel sur Ordinateur" />
+                        <img alt="Gabarit graphique sur Ordinateur"
+                             class="img-fluid mx-auto d-block my-2"
+                             src="assets/illustrator/gabarit-graphique/ordinateur-100.jpg"/>
                     </div>
                 </div>
                 <div class="card box-shadow">
@@ -97,7 +149,9 @@
                         <h3 class="my-0 font-weight-normal">Tablette</h3>
                     </div>
                     <div class="card-body">
-                        <img class="img-fluid mx-auto d-block my-2" src="assets/illustrator/gabarit-fonctionnel/tablette-100.png" alt="Gabarit fonctionnel sur Tablette" />
+                        <img alt="Gabarit graphique sur Tablette"
+                             class="img-fluid mx-auto d-block my-2"
+                             src="assets/illustrator/gabarit-graphique/tablette-100.jpg"/>
                     </div>
                 </div>
                 <div class="card box-shadow">
@@ -105,76 +159,55 @@
                         <h3 class="my-0 font-weight-normal">Mobile</h3>
                     </div>
                     <div class="card-body">
-                        <img class="img-fluid mx-auto d-block my-2" src="assets/illustrator/gabarit-fonctionnel/mobile-100.png" alt="Gabarit fonctionnel sur Mobile" />
+                        <img alt="Gabarit graphique sur Mobile"
+                             class="img-fluid mx-auto d-block my-2"
+                             src="assets/illustrator/gabarit-graphique/mobile-100.jpg"/>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Gabarit graphique</h2>
-        <p class="border-gray py-2 mb-0">Nous avons aussi établit un <strong>gabarit graphique</strong> en amont qui
-            nous a permis d'obtenir un pré-rendu visuel de notre site avant sa réalisation. Les fichiers se trouvent 
-            dans le répertoire "assets/illustrator/gabarit-graphique/".</p>
-            <div class="card-deck mt-3 text-center">
-                <div class="card box-shadow">
-                    <div class="card-header">
-                        <h3 class="my-0 font-weight-normal">Ordinateur</h3>
-                    </div>
-                    <div class="card-body">
-                        <img class="img-fluid mx-auto d-block my-2" src="assets/illustrator/gabarit-graphique/ordinateur-100.jpg" alt="Gabarit graphique sur Ordinateur" />
-                    </div>
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Illustrations PhotoShop</h2>
+            <p class="border-gray py-2 mb-0">Nous avons également utilisé les divers outils proposés
+                par <strong>PhotoShop</strong> pour réaliser quelques retouches d'images, afin d'illustrer
+                notamment le Carousel de la page <a href="composants.html">composants</a>. Les fichiers
+                se trouvent dans le répertoire "assets/photoshop/".</p>
+
+            <a class="btn btn-primary w-100" download href="assets/photoshop/image_1.psd">Télécharger l'image 1
+                (.psd)</a>
+            <div class="row">
+                <div class="col-md-6 col-12 text-center">
+                    <img alt="Image 1" class="img-fluid mx-auto d-block my-2" src="assets/photoshop/image_1.png"/>
                 </div>
-                <div class="card box-shadow">
-                    <div class="card-header">
-                        <h3 class="my-0 font-weight-normal">Tablette</h3>
-                    </div>
-                    <div class="card-body">
-                        <img class="img-fluid mx-auto d-block my-2" src="assets/illustrator/gabarit-graphique/tablette-100.jpg" alt="Gabarit graphique sur Tablette" />
-                    </div>
-                </div>
-                <div class="card box-shadow">
-                    <div class="card-header">
-                        <h3 class="my-0 font-weight-normal">Mobile</h3>
-                    </div>
-                    <div class="card-body">
-                        <img class="img-fluid mx-auto d-block my-2" src="assets/illustrator/gabarit-graphique/mobile-100.jpg" alt="Gabarit graphique sur Mobile" />
-                    </div>
+                <div class="col-md-6 col-12 text-center">
+                    <img alt="Image 1 modifiée via Photoshop" class="img-fluid mx-auto d-block my-2"
+                         src="assets/photoshop/image_1_modifiee.png"/>
                 </div>
             </div>
-    </div>
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Illustrations PhotoShop</h2>
-        <p class="border-gray py-2 mb-0">Nous avons également utilisé les divers outils proposés 
-            par <strong>PhotoShop</strong> pour réaliser quelques retouches d'images, afin d'illustrer 
-            notamment le Carousel de la page <a href="composants.html">composants</a>. Les fichiers 
-            se trouvent dans le répertoire "assets/photoshop/".</p>
-            <div class="row mt-2">
+            <a class="btn btn-primary w-100" download href="assets/photoshop/image_2.psd">Télécharger l'image 2
+                (.psd)</a>
+            <div class="row">
                 <div class="col-md-6 col-12 text-center">
-                    <img class="img-fluid mx-auto d-block my-2" src="assets/photoshop/image_1.png" alt="Image 1" />
+                    <img alt="Image 2" class="img-fluid mx-auto d-block my-2" src="assets/photoshop/image_2.jpg"/>
                 </div>
                 <div class="col-md-6 col-12 text-center">
-                    <img class="img-fluid mx-auto d-block my-2" src="assets/photoshop/image_1_modifiee.png" alt="Image 1 modifiée via Photoshop" />
-                </div>
-                <div class="col-md-6 col-12 text-center">
-                    <img class="img-fluid mx-auto d-block my-2" src="assets/photoshop/image_2.jpg" alt="Image 2" />
-                </div>
-                <div class="col-md-6 col-12 text-center">
-                    <img class="img-fluid mx-auto d-block my-2" src="assets/photoshop/image_2_modifiee.png" alt="Image 2 modifiée via Photoshop" />
+                    <img alt="Image 2 modifiée via Photoshop" class="img-fluid mx-auto d-block my-2"
+                         src="assets/photoshop/image_2_modifiee.png"/>
                 </div>
             </div>
-    </div>
+        </div>
 
-</main>
+    </main>
 
-<footer class="py-2 border-top text-muted text-center text-small bg-light footer navbar-fixed-bottom">
-    <p class="mb-1">© 2020 INFO_31 Web Design - Groupe 6</p>
-    <a class="nav-link" href="a-propos.html">Projet 2 - Réalisation d'un dossier de veille technologique</a>
-</footer>
+    <footer class="py-2 border-top text-muted text-center text-small bg-light footer navbar-fixed-bottom">
+        <p class="mb-1">© 2020 INFO_31 Web Design - Groupe 6</p>
+        <a class="nav-link" href="a-propos.html">Projet 2 - Réalisation d'un dossier de veille technologique</a>
+    </footer>
 
-<!-- JS -->
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

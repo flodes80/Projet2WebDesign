@@ -5,9 +5,9 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="COCHEREL Valentin, GARCIA Florian, LECLÈRE Valentin, ROSE Maxime, VOLFF Lorris" name="author"/>
-    <meta name="description"
-          content="Site d'informations sur Bootstrap 4 dans le cadre du projet 2 du module Web Design du Master 2 MIAGE de l'Université de Picardie Jules Verne"/>
-    <link rel="icon" href="assets/img/favicon.ico">
+    <meta content="Site d'informations sur Bootstrap 4 dans le cadre du projet 2 du module Web Design du Master 2 MIAGE de l'Université de Picardie Jules Verne"
+          name="description"/>
+    <link href="assets/img/favicon.ico" rel="icon">
 
     <title>Projet 2 - Bootstrap 4 - Accueil</title>
 
@@ -15,212 +15,232 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
 
-    <script src="https://kit.fontawesome.com/f279a2c766.js" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/f279a2c766.js"></script>
 </head>
 
 <body>
-<header class="fixed-top">
-    <nav class="navbar navbar-dark bg-purple navbar-expand-lg">
-        <a class="navbar-brand ml-4" href="index.html"><img src="assets/img/Bootstrap_logo.svg" alt="Logo du Projet 2 de Web Design" height="50" width="50"></a>
-        <button aria-controls="menu" aria-expanded="false"
-                aria-label="Menu horizontal" class="navbar-toggler" data-target="#menu"
-                data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ml-auto mr-4">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Présentation</a>
+    <header class="fixed-top">
+        <nav class="navbar navbar-dark bg-purple navbar-expand-lg">
+            <a class="navbar-brand ml-4" href="index.html"><img alt="Logo du Projet 2 de Web Design"
+                                                                height="50" src="assets/img/Bootstrap_logo.svg"
+                                                                width="50"></a>
+            <button aria-controls="menu" aria-expanded="false"
+                    aria-label="Menu horizontal" class="navbar-toggler" data-target="#menu"
+                    data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="installation.html">Installation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mise-en-page.html">Mise en page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="composants.html">Composants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a-propos.html">À propos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container pt-1">
+
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+            <div class="lh-100">
+                <h1 class="mb-0 text-white lh-100">Présentation de Bootstrap</h1>
+            </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Description brève</h2>
+            <p class="border-gray py-2 mb-0">Bootstrap est ce que l’on appelle un <strong>framework CSS</strong>
+                (Cascading
+                Style Sheets) <strong>open-source</strong>, regroupant un <strong>ensemble de librairies</strong> dans
+                le
+                but de <strong>faciliter / accélérer le développement</strong> de styles CSS.</p>
+            <p class="border-gray py-2 mb-0">Cela correspond plus concrètement à un ensemble de fichiers <strong>Javascript
+                et CSS</strong> qui permettent de <strong>créer des designs</strong> plus ou moins complexes de manière
+                assez simple.</p>
+            <p class="border-gray py-2 mb-0">Bootstrap défini au travers de ses fichiers, et donc de son framework, tout
+                un
+                tas de <strong>règles prédéfinies</strong> qui permettent d’appliquer un ensemble de styles à tel ou tel
+                élément HTML (Hypertext Markup Language).</p>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Naissance de Bootstrap</h2>
+            <p class="border-bottom border-gray py-2 mb-0">Créé à l’origine par un designer / développeur de Twitter,
+                Bootstrap est devenu l’un des frameworks « front-end » open-source les plus populaires au monde. En
+                2010,
+                deux employés de Twitter créent Bootstrap :</p>
+            <div class="row justify-content-center my-3">
+                <div class="col-12 col-sm-6 col-md-5 col-lg-4 mb-4 mb-sm-auto">
+                    <div class="card text-center">
+                        <img alt="Mark Otto" class="card-img-top" src="assets/img/mark-otto.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Mark Otto</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-img-bottom" href="https://twitter.com/mdo"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                    <div class="card text-center">
+                        <img alt="Jacob Thornton" class="card-img-top" src="assets/img/jacob-thornton.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Jacob Thornton</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-img-bottom" href="https://twitter.com/fat"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="border-gray py-2 mb-0">Avant de devenir un projet open-source, ce framework était connu sous le
+                nom de
+                « Twitter Blueprint ». Ce projet était initialement interne à l’entreprise <strong>Twitter</strong>. Un
+                an
+                après, le vendredi <strong>19 août 2011</strong>, la <strong>première version publique</strong> de
+                Bootstrap
+                voyait le jour. Depuis, ce n’est pas moins de <strong>vingt versions</strong> qui ont été publiées, dont
+                deux réécritures majeures avec les versions 2 et 3.</p>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Historique des versions de Bootstrap</h2>
+            <p class="border-gray py-2 mb-0">Voici un historique rapide des versions majeures du framework : </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>Août 2011 : Bootstrap 1</strong>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Première version open source publiée, pose les bases du futur du
+                            framework.
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="installation.html">Installation</a>
+                <li class="list-group-item">
+                    <strong>Janvier 2012 : Bootstrap 2</strong>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Mise à disposition de nouveaux composants graphiques : Progress
+                            Bars,
+                            Button Groups, Caroussels, etc.
+                        </li>
+                        <li class="list-group-item">Mise en place système permettant de rendre les sites web «
+                            responsive »,
+                            s’adaptant aux supports mobiles tels que les smartphones et tablettes.
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mise-en-page.html">Mise en page</a>
+                <li class="list-group-item">
+                    <strong>Août 2013 : Bootstrap 3</strong>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Refonte complète du framework</li>
+                        <li class="list-group-item">Utilisation flat design et approche mobile-first</li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="composants.html">Composants</a>
+                <li class="list-group-item">
+                    <strong>Janvier 2018 : Bootstrap 4</strong>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Nouvelle réécriture massive du code</li>
+                        <li class="list-group-item">Remplacement préprocesseur LESS par SASS</li>
+                        <li class="list-group-item">Abandon navigateurs IE 8 et 9</li>
+                        <li class="list-group-item">Support des flexbox</li>
+                        <li class="list-group-item">Ajout nombreuses classes utilitaires et options personnalisation
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="a-propos.html">À propos</a>
+                <li class="list-group-item">
+                    <strong>Décembre 2020 : Beta de Bootstrap 5 (5.0.0-beta1)</strong>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Abandon jQuery au profit de Javascript pur</li>
+                        <li class="list-group-item">Abandon IE 10 et 11</li>
+                        <li class="list-group-item">Amélioration API</li>
+                        <li class="list-group-item">Ajout bibliothèque d’icônes</li>
+                    </ul>
                 </li>
             </ul>
         </div>
-    </nav>
-</header>
 
-<main class="container pt-1">
-
-    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
-        <div class="lh-100">
-            <h1 class="mb-0 text-white lh-100">Présentation de Bootstrap</h1>
-        </div>
-    </div>
-
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Description brève</h2>
-        <p class="border-gray py-2 mb-0">Bootstrap est ce que l’on appelle un <strong>framework CSS</strong> (Cascading
-            Style Sheets) <strong>open-source</strong>, regroupant un <strong>ensemble de librairies</strong> dans le
-            but de <strong>faciliter / accélérer le développement</strong> de styles CSS.</p>
-        <p class="border-gray py-2 mb-0">Cela correspond plus concrètement à un ensemble de fichiers <strong>Javascript
-            et CSS</strong> qui permettent de <strong>créer des designs</strong> plus ou moins complexes de manière
-            assez simple.</p>
-        <p class="border-gray py-2 mb-0">Bootstrap défini au travers de ses fichiers, et donc de son framework, tout un
-            tas de <strong>règles prédéfinies</strong> qui permettent d’appliquer un ensemble de styles à tel ou tel
-            élément HTML (Hypertext Markup Language).</p>
-    </div>
-
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Naissance de Bootstrap</h2>
-        <p class="border-bottom border-gray py-2 mb-0">Créé à l’origine par un designer / développeur de Twitter,
-            Bootstrap est devenu l’un des frameworks « front-end » open-source les plus populaires au monde. En 2010,
-            deux employés de Twitter créent Bootstrap :</p>
-        <div class="row justify-content-center my-3">
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4 mb-4 mb-sm-auto">
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/mark-otto.jpg" alt="Mark Otto">
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Pourquoi utiliser Bootstrap ?</h2>
+            <p class="border-bottom border-gray py-2 mb-0">Bootstrap est l’un des frameworks CSS les <strong>plus
+                utilisés
+                au monde</strong>, cela est dû à différents avantages que ce dernier présente.</p>
+            <div class="card-deck mt-3 text-center">
+                <div class="card box-shadow">
+                    <div class="card-header">
+                        <h3 class="my-0 font-weight-normal">Un gain de temps notable</h3>
+                    </div>
                     <div class="card-body">
-                        <h4 class="card-title">Mark Otto</h4>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://twitter.com/mdo" class="card-img-bottom"><i class="fa fa-twitter"></i></a>
+                        <p>L’intérêt principal d’un framework est globalement de faire <strong>gagner du temps</strong>
+                            aux
+                            développeurs en leur mettant à disposition des <strong>éléments préconçus</strong>, et ainsi
+                            éviter de « réinventer la roue », Bootstrap ne déroge pas à cette règle. En effet, une fois
+                            celui-ci maîtrisé il permettra de développer des <strong>designs complexes et
+                                robustes</strong>
+                            en très peu de temps comparé à une écriture de code HTML / CSS classique.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/jacob-thornton.jpg" alt="Jacob Thornton">
+                <div class="card box-shadow">
+                    <div class="card-header">
+                        <h3 class="my-0 font-weight-normal">Une certaine normalisation</h3>
+                    </div>
                     <div class="card-body">
-                        <h4 class="card-title">Jacob Thornton</h4>
+                        <p>Le développement d’une page HTML et de son style CSS est assez <strong>fastidieux</strong> si
+                            celui-ci est fait manuellement sans aucune aide. Toutes ces tâches vont être simplifiées par
+                            Bootstrap, en effet ce dernier nous met à disposition un <strong>ensemble de règles et
+                                d’outils</strong> qui vont permettre de créer des pages <strong>responsives</strong> et
+                            <strong>compatibles</strong> avec la majorité des navigateurs facilement.</p>
                     </div>
-                    <div class="card-footer">
-                        <a href="https://twitter.com/fat" class="card-img-bottom"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="card box-shadow">
+                    <div class="card-header">
+                        <h3 class="my-0 font-weight-normal">Une bonne renommée</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>En utilisant Bootstrap, c’est un certain gage de <strong>sécurité</strong> puisque ce
+                            framework
+                            appartient à <strong>Twitter</strong> qui est une très grande entreprise solide. De plus, ce
+                            framework est beaucoup utilisé sur le web. Il est donc facile de <strong>se
+                                documenter</strong>,
+                            trouver des <strong>exemples</strong>, des <strong>tutoriels</strong> et des réponses aux
+                            différentes questions qu’un développeur pourrait se poser.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="border-gray py-2 mb-0">Avant de devenir un projet open-source, ce framework était connu sous le nom de
-            « Twitter Blueprint ». Ce projet était initialement interne à l’entreprise <strong>Twitter</strong>. Un an
-            après, le vendredi <strong>19 août 2011</strong>, la <strong>première version publique</strong> de Bootstrap
-            voyait le jour. Depuis, ce n’est pas moins de <strong>vingt versions</strong> qui ont été publiées, dont
-            deux réécritures majeures avec les versions 2 et 3.</p>
-    </div>
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Historique des versions de Bootstrap</h2>
-        <p class="border-gray py-2 mb-0">Voici un historique rapide des versions majeures du framework : </p>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <strong>Août 2011 : Bootstrap 1</strong>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Première version open source publiée, pose les bases du futur du
-                        framework.
-                    </li>
-                </ul>
-            </li>
-            <li class="list-group-item">
-                <strong>Janvier 2012 : Bootstrap 2</strong>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Mise à disposition de nouveaux composants graphiques : Progress Bars,
-                        Button Groups, Caroussels, etc.
-                    </li>
-                    <li class="list-group-item">Mise en place système permettant de rendre les sites web « responsive »,
-                        s’adaptant aux supports mobiles tels que les smartphones et tablettes.
-                    </li>
-                </ul>
-            </li>
-            <li class="list-group-item">
-                <strong>Août 2013 : Bootstrap 3</strong>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Refonte complète du framework</li>
-                    <li class="list-group-item">Utilisation flat design et approche mobile-first</li>
-                </ul>
-            </li>
-            <li class="list-group-item">
-                <strong>Janvier 2018 : Bootstrap 4</strong>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Nouvelle réécriture massive du code</li>
-                    <li class="list-group-item">Remplacement préprocesseur LESS par SASS</li>
-                    <li class="list-group-item">Abandon navigateurs IE 8 et 9</li>
-                    <li class="list-group-item">Support des flexbox</li>
-                    <li class="list-group-item">Ajout nombreuses classes utilitaires et options personnalisation</li>
-                </ul>
-            </li>
-            <li class="list-group-item">
-                <strong>Décembre 2020 : Beta de Bootstrap 5 (5.0.0-beta1)</strong>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Abandon jQuery au profit de Javascript pur</li>
-                    <li class="list-group-item">Abandon IE 10 et 11</li>
-                    <li class="list-group-item">Amélioration API</li>
-                    <li class="list-group-item">Ajout bibliothèque d’icônes</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Pourquoi utiliser Bootstrap ?</h2>
-        <p class="border-bottom border-gray py-2 mb-0">Bootstrap est l’un des frameworks CSS les <strong>plus utilisés
-            au monde</strong>, cela est dû à différents avantages que ce dernier présente.</p>
-        <div class="card-deck mt-3 text-center">
-            <div class="card box-shadow">
-                <div class="card-header">
-                    <h3 class="my-0 font-weight-normal">Un gain de temps notable</h3>
-                </div>
-                <div class="card-body">
-                    <p>L’intérêt principal d’un framework est globalement de faire <strong>gagner du temps</strong> aux
-                        développeurs en leur mettant à disposition des <strong>éléments préconçus</strong>, et ainsi
-                        éviter de « réinventer la roue », Bootstrap ne déroge pas à cette règle. En effet, une fois
-                        celui-ci maîtrisé il permettra de développer des <strong>designs complexes et robustes</strong>
-                        en très peu de temps comparé à une écriture de code HTML / CSS classique.</p>
-                </div>
-            </div>
-            <div class="card box-shadow">
-                <div class="card-header">
-                    <h3 class="my-0 font-weight-normal">Une certaine normalisation</h3>
-                </div>
-                <div class="card-body">
-                    <p>Le développement d’une page HTML et de son style CSS est assez <strong>fastidieux</strong> si
-                        celui-ci est fait manuellement sans aucune aide. Toutes ces tâches vont être simplifiées par
-                        Bootstrap, en effet ce dernier nous met à disposition un <strong>ensemble de règles et
-                            d’outils</strong> qui vont permettre de créer des pages <strong>responsives</strong> et
-                        <strong>compatibles</strong> avec la majorité des navigateurs facilement.</p>
-                </div>
-            </div>
-            <div class="card box-shadow">
-                <div class="card-header">
-                    <h3 class="my-0 font-weight-normal">Une bonne renommée</h3>
-                </div>
-                <div class="card-body">
-                    <p>En utilisant Bootstrap, c’est un certain gage de <strong>sécurité</strong> puisque ce framework
-                        appartient à <strong>Twitter</strong> qui est une très grande entreprise solide. De plus, ce
-                        framework est beaucoup utilisé sur le web. Il est donc facile de <strong>se documenter</strong>,
-                        trouver des <strong>exemples</strong>, des <strong>tutoriels</strong> et des réponses aux
-                        différentes questions qu’un développeur pourrait se poser.</p>
-                </div>
-            </div>
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h2 class="border-bottom border-gray pb-2 mb-0">Les limites de Bootstrap</h2>
+            <p class="border-gray py-2 mb-0">Malgré les différents avantages cités ci-dessus, on comprend très vite que
+                Bootstrap requiert un grand <strong>coût d’apprentissage</strong> pour tirer pleinement de son
+                potentiel. De
+                plus, il s’agit d’un framework CSS assez <strong>lourd à charger</strong>, même si Bootstrap 5 semble
+                tendre
+                à corriger une partie de ce problème. Et enfin, l'utilisation de Bootstrap peut mener à une difficulté à
+                <strong>rendre son site unique</strong> si l'on ne le surcharge pas avec une feuille de style
+                personnalisée.
+            </p>
         </div>
-    </div>
 
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h2 class="border-bottom border-gray pb-2 mb-0">Les limites de Bootstrap</h2>
-        <p class="border-gray py-2 mb-0">Malgré les différents avantages cités ci-dessus, on comprend très vite que
-            Bootstrap requiert un grand <strong>coût d’apprentissage</strong> pour tirer pleinement de son potentiel. De
-            plus, il s’agit d’un framework CSS assez <strong>lourd à charger</strong>, même si Bootstrap 5 semble tendre
-            à corriger une partie de ce problème. Et enfin, l'utilisation de Bootstrap peut mener à une difficulté à
-            <strong>rendre son site unique</strong> si l'on ne le surcharge pas avec une feuille de style personnalisée.
-        </p>
-    </div>
+    </main>
 
-</main>
+    <footer class="py-2 border-top text-muted text-center text-small bg-light footer navbar-fixed-bottom">
+        <p class="mb-1">© 2020 INFO_31 Web Design - Groupe 6</p>
+        <a class="nav-link" href="a-propos.html">Projet 2 - Réalisation d'un dossier de veille technologique</a>
+    </footer>
 
-<footer class="py-2 border-top text-muted text-center text-small bg-light footer navbar-fixed-bottom">
-    <p class="mb-1">© 2020 INFO_31 Web Design - Groupe 6</p>
-    <a class="nav-link" href="a-propos.html">Projet 2 - Réalisation d'un dossier de veille technologique</a>
-</footer>
-
-<!-- JS -->
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

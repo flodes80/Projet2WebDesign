@@ -10,17 +10,29 @@ main {
     margin-top: 80px;
 }
 
-.text-white-50 { color: rgba(255, 255, 255, .5); }
+.text-white-50 {
+    color: rgba(255, 255, 255, .5);
+}
 
-.bg-purple { background-color: var(--purple); }
+.bg-purple {
+    background-color: #6f42c1;
+}
 
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
 
-.lh-100 { line-height: 1; }
-.lh-125 { line-height: 1.25; }
+.lh-100 {
+    line-height: 1;
+}
 
+.lh-125 {
+    line-height: 1.25;
+}
 
 
 /*----------------------------------
@@ -28,7 +40,6 @@ main {
 ----------------------------------*/
 
 /* Aucun CSS supplémentaire sur cette page */
-
 
 
 /*----------------------------------
@@ -40,21 +51,19 @@ main {
 }
 
 
-
 /*----------------------------------
 # Composants
 ----------------------------------*/
 
 .list-composants [class^="border"] {
-    display: inline-block;
-    width: 95%;
     background-color: #f5f5f5;
-    text-align: center;
+    cursor: pointer;
+    display: inline-block;
     margin: 0.25rem;
     padding: 1rem;
-    cursor: pointer;
+    text-align: center;
+    width: 95%;
 }
-
 
 
 /*----------------------------------
